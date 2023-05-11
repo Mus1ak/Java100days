@@ -1,6 +1,5 @@
 //program to swap numbers - take two numbers from the user and swap it.
 
-
 import java.util.Scanner;
 
 public class swapnum {
