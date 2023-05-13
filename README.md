@@ -21,4 +21,4 @@ If you spot any errors or have suggestions for improvements, please feel free to
 
 ## Acknowledgments
 
-I would like to thank the many online resources that have helped me on my Java learning journey, including Oracle's Java Tutorials, Baeldung, and GeeksforGeeks. I hope that my repository can be a helpful resource for others as well!
+I would like to thank the many online resources that have helped me on my Java learning journey, including Kunal Kushwaha's Java Tutorials, StackOverflow, ChatGpt, and GeeksforGeeks. I hope that my repository can be a helpful resource for others as well!
