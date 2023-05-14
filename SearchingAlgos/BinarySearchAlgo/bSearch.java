@@ -27,9 +27,10 @@ public class bSearch{
 
         - Time Complexity
             - Best Case: when the middle element is equal to key in the first comparison , Time Complexity : O(1)
-            - Worst Case : O(N/2)
+            - Worst Case : O(log(N)) -> N : is the size of array
         */
-        int arr[] = {1,2,3,4,5,6,7};
+        int arr[] = {1,12,33,4,5,6,7};
+        Arrays.sort(arr);   //sorting array is needed for Binary 
         System.out.println(BinSearch(arr, 6));
         
     }
@@ -38,8 +39,9 @@ public class bSearch{
             int end = arr.length - 1;
 
             while(start<=end){
-                int mid = (start+end)/2;
-                if(arr[mid] == key){
+                int mid = (start+end)/2; // might be possible if the values of (start+end) may exceed the range of int. so instead of doing this we can use     
+                    //  mid = start + (end - start)/2
+                if(arr[mid] == key){    
                     return mid;
                 }
                 else if(arr[mid]<key){
