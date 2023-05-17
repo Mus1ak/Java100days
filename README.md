@@ -1,4 +1,4 @@
-# LearningJava2023
+9# LearningJava2023
 
 Welcome to my Java learning repository! This repository is a collection of my Java code examples and notes as I explore the world of Java development.
 
@@ -6,10 +6,10 @@ Welcome to my Java learning repository! This repository is a collection of my Ja
 
 The repository is organized into several categories, including:
 
-- **Basics**: Covers fundamental concepts such as variables, control structures, and loops.
-- **Object-Oriented Programming (OOP)**: Explores OOP concepts such as classes, objects, inheritance, and polymorphism.
-- **LeetCode**: Contains my solutions to coding challenges on LeetCode, a popular coding interview preparation website.
-- **Data Structures and Algorithms (DSA)**: Includes my implementations of common data structures (e.g. linked lists, stacks, and queues) and algorithms (e.g. sorting and searching).
+- **Basics** : Covers fundamental concepts such as variables, control structures, and loops.
+- **Object-Oriented Programming (OOP)** : Explores OOP concepts such as classes, objects, inheritance, and polymorphism.
+- **[LeetCode](https://github.com/Mus1ak/LearningJava2023/tree/master/LeetCode)** : Contains my solutions to coding challenges on LeetCode, a popular coding interview preparation website. 
+- **Data Structures and Algorithms (DSA)** : Includes my implementations of common data structures (e.g. linked lists, stacks, and queues) and algorithms (e.g. sorting and searching).
 
 ## Usage
 
