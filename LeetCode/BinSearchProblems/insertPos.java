@@ -19,9 +19,11 @@ public class insertPos {
             }
             mid = (s + e) / 2;
         }
+        //edge cases
         if(arr.length == 0){
             return 0;
         }
+
         if (target <= 1) {
             return s;
         }
