@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class CyclicSort {
     //cyclic sort 
     /*
+    - if given range 0-N or 1-N or any continuos then just apply cyclic sort.
     - We have an array: 3, 5, 1, 2, 4.
     - We want to check if each element is in its correct position.
     - To find the correct position, we subtract 1 from each element.
