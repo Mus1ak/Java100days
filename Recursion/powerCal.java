@@ -8,7 +8,7 @@ public class powerCal {
 
     public static void main(String[] args) {
         int x = 2;
-        int n = 5;
+        int n = 4;
         System.out.println(power(x, n));
     }
 }
