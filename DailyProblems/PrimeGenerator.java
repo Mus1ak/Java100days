@@ -1,12 +1,15 @@
-/* Online Java Compiler and Editor */
+//Question : Peter wants to generate some prime numbers for his cryptosystem. Help him! Your task is to generate all prime numbers between two given numbers!
 import java.util.Scanner;
-public class Main {
+public class PrimeGenerator {
 
     public static void main(String []args) {
-        Primes(1, 100000);
+        Primes(1, 10);
     }
 
     public static void Primes(int a, int b) {
+        if(a>b){
+            System.out.println("error bounds");
+        }
         for (int i = a+1; i < b; i++) {
             if(isPrime(i) == true){
                 System.out.println(i);
