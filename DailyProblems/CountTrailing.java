@@ -30,15 +30,19 @@ public class CountTrailing {
 
     public static void main(String[] args) {
         int[] arr= {1,2,3,515,6,4};
-        for (int i = 0; i < arr.length-i; i++) {
-            swap(arr,i, arr.length-i-1);
-        }
+        rev(arr);
         System.out.println(Arrays.toString(arr));
     }
 
-    public static void swap(int[] arr, int a, int b){
-        int temp = arr[a];
-        arr[a]  = arr[b];
-        arr[b] = temp;
+    public static void rev(int[] arr){
+        int start = 0;
+        int end = arr.length - 1;
+        while (start < end) {
+            int temp = arr[start];
+            arr[start]  = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
     }
 }
