@@ -33,7 +33,8 @@ class Revpartofarray{
 
     public static int max(int[] arr){
         int count = 0;
-        int maxel = Integer.MIN_VALUE;
+        int maxel = arr[0];
+
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > maxel) {
                 maxel = arr[i];
