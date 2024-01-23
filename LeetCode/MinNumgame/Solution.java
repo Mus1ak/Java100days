@@ -6,7 +6,6 @@ public class Solution {
         System.out.println(CheckIfpanagram(sentence));
     }  
     
-    //using regex
     public static boolean CheckIfpanagram(String sentence){
         long c = sentence.toLowerCase().chars()
       .filter(ch -> ch >= 'a' && ch <= 'z')
