@@ -9,13 +9,11 @@ public class Solution {
         int largestAltitude = 0;
 
         for (int i = 0; i < gain.length; i++) {
-            currentAltitude += gain[i];
             System.out.println(currentAltitude);
             if (currentAltitude > largestAltitude) {
                 largestAltitude = currentAltitude;
             }
         }
-
         return largestAltitude;
     }
 }
