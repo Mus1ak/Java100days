@@ -5,9 +5,7 @@ public class Solution {
     }
 
     public static int numberOfSteps(int num) {
-        int count = 0;
-        
-        
+        int count = 0;        
         if (num % 2 == 1) {
             num = num - 1;
             count++;
