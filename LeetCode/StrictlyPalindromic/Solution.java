@@ -23,7 +23,8 @@ public class Solution{
             base++;
             int ognum = res;
             int revnum = 0;
-
+            
+            //checking if the num is palindrome of not
             while (ognum > 0) {
                 int rem = ognum%10;
                 revnum = revnum * 10 + rem;
