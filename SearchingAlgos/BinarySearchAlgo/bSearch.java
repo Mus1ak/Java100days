@@ -29,9 +29,9 @@ public class bSearch{
             - Best Case: when the middle element is equal to key in the first comparison , Time Complexity : O(1)
             - Worst Case : O(log(N)) -> N : is the size of array
         */
-        int arr[] = {1,12,33,4,5,6,7};
+        int arr[] = {1};
         Arrays.sort(arr);   //sorting array is needed for Binary 
-        System.out.println(BinSearch(arr, 6));
+        System.out.println(BinSearch(arr, 1));
         
     }
     static int BinSearch(int[]arr, int key){
