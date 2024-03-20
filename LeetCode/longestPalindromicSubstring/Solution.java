@@ -1,9 +1,28 @@
+/*
+ * Given a string s, return the longest 
+palindromic
+ 
+substring
+ in s.
+
+ 
+
+Example 1:
+
+Input: s = "babad"
+Output: "bab"
+Explanation: "aba" is also a valid answer......
+
+Input: s = "racecar"
+Output: "racecar"
+ */
+
 
 import java.util.Collections;
 
 public class Solution {
     public static void main(String[] args) {
-        System.out.println(LongPalSubstr("cbbd"));
+        System.out.println(LongPalSubstr("racecar"));
     }
     public static String LongPalSubstr(String s){
         if(s.length() <= 1){
@@ -38,6 +57,7 @@ public class Solution {
             if(palindrome.length() > LPS.length()) LPS = palindrome;
 
         }
+        System.gc();
         return LPS;
     }
 
