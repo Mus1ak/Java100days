@@ -1,5 +1,9 @@
 import java.util.Arrays;
 
+//Kadens algorithm says that whenever you get a negative result after suming or we can say the final sum just put that as 0. and again use normal mathematical logic
+// big -ve number + small +ve number = is always -ve so put 0,
+// small -ve number + big +ve number = is always +ve so put the number which comes after sum, etc etc...
+
 public class Solution {
     public static void main(String[] args) {
         int arr[] = {-1,2,4,-2,-2,-5};
