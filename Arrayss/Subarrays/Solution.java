@@ -1,6 +1,6 @@
 public class Solution {
     public static void main(String[] args) {
-        int[] arr = {2,4,10};
+        int[] arr = {2,4,6,8,10};
         // PrintSubarrays(arr);
         Maxnmin(arr);
     }
@@ -11,7 +11,7 @@ public class Solution {
         //subarrays -> 2,24,246,2468,246810 || 4,46,468,46810 .....
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
+            for (int j = i; j < arr.length; j++) {
                 for (int k = i; k <= j; k++) {
                     System.out.print(arr[k] + " ");
                 }
@@ -26,16 +26,17 @@ public class Solution {
     public static void Maxnmin(int arr[]){
         int max = 0;
         int min = Integer.MAX_VALUE;
+        int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                int sum = 0; 
+            for (int j = i; j < arr.length; j++) {
+                sum = 0; 
                 for (int k = i; k <= j; k++) {
                     sum += arr[k];
-                    System.out.print(arr[k] + " -> " + sum + " ");
-                    if(sum > max) max = sum;
-                    if(sum < min) min = sum;
+                    // System.out.print(arr[k] + " -> " + sum + " ");
                 }
-                System.out.println();
+                System.out.println(sum);
+                if(sum > max) max = sum;
+                if(sum < min) min = sum;
 
             }
         }
