@@ -6,36 +6,30 @@ import java.util.Arrays;
 
 public class Solution {
     public static void main(String[] args) {
-        int arr[] = {-1,2,4,-2,-2,-5};
+        int arr[] = {-2,1,-3,4,-1,2,1,-5,4};
         System.out.println(Kadens(arr));
     }
 
-    public static boolean isNegative(int arr[]){
-        //if all numbers are negative
-        boolean isNeg = false;
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] < 0){
-                isNeg = true;
+    public static boolean isNeg(int[] arr) {
+        for (int num : arr) {
+            if (num >= 0) {
+                return false; 
             }
         }
-        return isNeg;
-    }
+        return true; 
+    }   
 
     public static int Kadens(int arr[]){
-        int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
-
-        if(isNegative(arr)){
+        int currSum = 0;
+        if(isNeg(arr)){
             Arrays.sort(arr);
-            maxSum = arr[arr.length-1];
+            return arr[arr.length-1];
         }
-        else{
-            for (int i = 0; i < arr.length; i++) {
-                currSum = currSum + arr[i];
-                if(currSum < 0) currSum = 0;
-                //check
-                maxSum = Math.max(maxSum, currSum);
-            }
+        for(int i=0; i<arr.length; i++){
+            currSum += arr[i];
+            if(currSum < 0) currSum = 0;
+            maxSum = Math.max(maxSum, currSum);
         }
         return maxSum;
     }
