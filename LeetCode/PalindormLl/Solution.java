@@ -23,6 +23,7 @@ public class Solution {
     }
     public boolean isPalindrome(ListNode head) {
         // if(head == null || head.next = null) return true;
+        //find th middle node 
         ListNode midNode = findMid(head);
         ListNode curr = midNode;
         ListNode prev = null;
@@ -42,7 +43,7 @@ public class Solution {
         }
 
         return true;
-
+    }
     }
 }
 
