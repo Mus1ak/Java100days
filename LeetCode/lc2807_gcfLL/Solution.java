@@ -21,7 +21,7 @@ public class Solution {
     }
 
     public static ListNode insertGreatestCommonDivisors(ListNode head) {
-        //size
+        //size size size
         ListNode temp = head;
         int size = 0;
         while(temp != null){
