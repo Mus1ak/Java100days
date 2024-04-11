@@ -7,7 +7,7 @@ public class Solution {
     }
     public static int[] deckRevealedIncreasing(int[] deck) {
         //reveal top card - remove queue
-        //if theres more card below it then move that card to the last
+        //if theres more card below it then move that card to the bottom of the deck
         Arrays.sort(deck);
         int revealed[] = new int[deck.length];
         Queue<Integer> q = new LinkedList<>();
